@@ -1,0 +1,22 @@
+﻿  Process "lex.l" flex file
+  lex.flex.cpp
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(48): warning C4005: 'INT8_MIN': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(59): note: see previous definition of 'INT8_MIN'
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(49): warning C4005: 'INT16_MIN': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(62): note: see previous definition of 'INT16_MIN'
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(50): warning C4005: 'INT32_MIN': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(65): note: see previous definition of 'INT32_MIN'
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(52): warning C4005: 'INT8_MAX': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(68): note: see previous definition of 'INT8_MAX'
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(53): warning C4005: 'INT16_MAX': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(71): note: see previous definition of 'INT16_MAX'
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(54): warning C4005: 'INT32_MAX': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(74): note: see previous definition of 'INT32_MAX'
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(77): note: see previous definition of 'UINT8_MAX'
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(80): note: see previous definition of 'UINT16_MAX'
+c:\program files\microsoft visual studio 14.0\vc\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition
+  c:\users\harsaroop dhillon\documents\visual studio 2015\projects\av_lexer\av_lexer\lex.flex.cpp(83): note: see previous definition of 'UINT32_MAX'
+  AV_lexer.vcxproj -> c:\users\harsaroop dhillon\documents\visual studio 2015\Projects\AV_lexer\Debug\AV_lexer.exe
+  AV_lexer.vcxproj -> c:\users\harsaroop dhillon\documents\visual studio 2015\Projects\AV_lexer\Debug\AV_lexer.pdb (Partial PDB)

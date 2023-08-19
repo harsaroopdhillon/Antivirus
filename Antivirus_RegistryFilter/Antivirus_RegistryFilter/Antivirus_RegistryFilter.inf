@@ -1,0 +1,90 @@
+;
+; Antivirus_RegistryFilter.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=Antivirus_RegistryFilter.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+Antivirus_RegistryFilter.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%Antivirus_RegistryFilter.DeviceDesc%=Antivirus_RegistryFilter_Device, Root\Antivirus_RegistryFilter ; TODO: edit hw-id
+
+[Antivirus_RegistryFilter_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+Antivirus_RegistryFilter.sys
+
+;-------------- Service installation
+[Antivirus_RegistryFilter_Device.NT.Services]
+AddService = Antivirus_RegistryFilter,%SPSVCINST_ASSOCSERVICE%, Antivirus_RegistryFilter_Service_Inst
+
+; -------------- Antivirus_RegistryFilter driver install sections
+[Antivirus_RegistryFilter_Service_Inst]
+DisplayName    = %Antivirus_RegistryFilter.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\Antivirus_RegistryFilter.sys
+
+;
+;--- Antivirus_RegistryFilter_Device Coinstaller installation ------
+;
+
+[DestinationDirs]
+Antivirus_RegistryFilter_Device_CoInstaller_CopyFiles = 11
+
+[Antivirus_RegistryFilter_Device.NT.CoInstallers]
+AddReg=Antivirus_RegistryFilter_Device_CoInstaller_AddReg
+CopyFiles=Antivirus_RegistryFilter_Device_CoInstaller_CopyFiles
+
+[Antivirus_RegistryFilter_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[Antivirus_RegistryFilter_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[SourceDisksFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+[Antivirus_RegistryFilter_Device.NT.Wdf]
+KmdfService =  Antivirus_RegistryFilter, Antivirus_RegistryFilter_wdfsect
+[Antivirus_RegistryFilter_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "Antivirus_RegistryFilter Installation Disk"
+Antivirus_RegistryFilter.DeviceDesc = "Antivirus_RegistryFilter Device"
+Antivirus_RegistryFilter.SVCDESC = "Antivirus_RegistryFilter Service"

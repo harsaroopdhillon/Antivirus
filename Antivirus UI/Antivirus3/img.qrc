@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>close.png</file>
+        <file>home.svg</file>
+        <file>scan.svg</file>
+        <file>update.png</file>
+        <file>setup.png</file>
+        <file>help.png</file>
+        <file>card.png</file>
+        <file>www.png</file>
+        <file>shield.png</file>
+        <file>left.png</file>
+        <file>protected.png</file>
+        <file>not_protected.png</file>
+        <file>protected1.png</file>
+        <file>protected2.png</file>
+        <file>protected3.ico</file>
+        <file>protected4.svg</file>
+        <file>history.png</file>
+        <file>run.png</file>
+        <file>stop.png</file>
+        <file>n_icons/nnotProtected.png</file>
+        <file>n_icons/nprotected.png</file>
+        <file>n_icons/ndesktop.png</file>
+        <file>n_icons/nclose2.png</file>
+        <file>n_icons/check.png</file>
+        <file>n_icons/nsearch.png</file>
+        <file>n_icons/nclose.png</file>
+        <file>n_icons/nminimize.png</file>
+        <file>n_icons/maxi.png</file>
+    </qresource>
+    <qresource prefix="/Database"/>
+    <qresource prefix="/">
+        <file>protected4.svg</file>
+    </qresource>
+</RCC>

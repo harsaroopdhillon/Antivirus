@@ -1,0 +1,2 @@
+#include <Windows.h>
+BOOL GetPEInfo(LPCWSTR lpszFileName, std::vector<LPSTR> &IAT, std::vector<LPSTR> &ImportTableDLL, BOOL &IatPresent, DWORD &IatEntryPoint, std::vector<LPSTR> &EAT, BOOL &EatPresent, DWORD &EatEntryPoint, BOOL &ValidPe, DWORD &EntryPointAddress, WORD &Type, DWORD &ImageSize, DWORD &ImageBase);

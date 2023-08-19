@@ -1,0 +1,258 @@
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $a = { F4 23 62 B4 };
+		$b = { F4 12 62 B4 };
+    check:
+        $a not $b;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $a = { F4 23 ( 62 B4 | 56 ) 45 };
+        $b = "1231312";
+    check:
+        $a and $b;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $a = "AA?B";
+        $b = {12 66 34 12};
+    check:
+        $a or $b;
+}
+
+
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $b = "wow\n";
+    check:
+        $b;
+}
+
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $b = "wow\tyea";
+    check:
+        $b;
+}
+
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $b = "wow\\";
+    check:
+        $b;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        insensitive $b = "wow";
+    check:
+        $b;
+}
+
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+
+     $b = pe.exports("That", "Boy", "His", "Here");
+     $c = pe.imports("This", "That", "Where", "Here");
+    check:
+      $c or $b;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+
+     $b = pe.exports("That", "Boy", "His", "Here");
+     $c = pe.imports("This", "That", "Where", "Here");
+    check:
+      $c and $b;
+}
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+
+     $b = pe.exports("That", "Boy", "His", "Here");
+     $c = pe.imports("This", "That", "Where", "Here");
+    check:
+      $c not $b;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        wide $b = "wow";
+    check:
+        $b;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        ascii $b = "wow";
+    check:
+        $b;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        nonalpha $b = "mywebsite";
+    check:
+        $b;
+}/*
+hjdvkjsdv sdvnsd vsdkvjhbsd vsdkvjhbsdsdvb
+sdikhsdn sdksdhn dsklvhsdn
+sdkdsn dsdhfnsdfdkshfndskf */
+Signature Banker : 12312312312 //This is a comment
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $b = "something";
+    check:
+        $b at 4;
+}
+// This is a comment
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $b = "something";
+    check:
+        $b at 0x2;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    /*
+      This is a comment
+    */
+    // this is another comment
+    types:
+        $b = "something";
+    check:
+        ($b * 5);
+}
+
+
+
+
+
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $a = filename = = "something.exe";
+    check:
+        $a;
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $a = filesize >  = 100;
+    check:
+        $a;
+}
+
+Signature Banker : 1235
+{
+   info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+
+    check:
+      pe.call("OutputDebugString('O')");
+      pe.call("OutputDebugString('O')", "MessageBox(0, 'A', 'M', NULL)");
+}
+
+Signature Banker : 12312312312
+{
+    info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+        $b = /md5: [0-9a-zA-Z]{32}/;
+    check:
+        $b;
+}
+
+Signature Banker : 1235
+{
+   info:
+    	description= "this is blah blah...";
+    	level=5;
+    types:
+      $a = pe.call("OutputDebugString('O')");
+      $b = pe.call("OutputDebugString('O')", "MessageBox(0, 'A', 'M', NULL)");
+    check:
+      $a;
+      $b;
+}

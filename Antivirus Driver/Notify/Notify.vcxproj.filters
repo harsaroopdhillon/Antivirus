@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Self">
+      <UniqueIdentifier>{4389677a-ecab-43e4-b5c0-c63bd46fc6d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Firewall">
+      <UniqueIdentifier>{7a990bbe-0097-4e0b-a592-90aae66ebf1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Registery">
+      <UniqueIdentifier>{06dfcede-a126-4ed2-935f-65254c958ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Driver Entry">
+      <UniqueIdentifier>{f9dc141d-9e15-4c01-b301-f209bc9ef877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Process">
+      <UniqueIdentifier>{a1873692-7743-42dc-9091-3bac81ca849f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Process">
+      <UniqueIdentifier>{d4a9f1bf-0221-40aa-94b2-e5a9190a210f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Driver Entry">
+      <UniqueIdentifier>{5d472014-ea99-4856-9388-c7e299a870b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Self">
+      <UniqueIdentifier>{f59ea470-2ad6-4454-9474-f423920120a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\registry">
+      <UniqueIdentifier>{3f99f6c6-b384-4da3-b4c1-460f3523ddcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Firewall">
+      <UniqueIdentifier>{b168ec36-7ad3-42fb-95bd-56643316ef12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FileSys">
+      <UniqueIdentifier>{42780eae-cdf6-4b70-931e-eef7a6358cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FileSys">
+      <UniqueIdentifier>{21fb2320-6a64-4a81-833c-e9203430b845}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="Notify.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="driver.c">
+      <Filter>Source Files\Driver Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="Obcallback.c">
+      <Filter>Source Files\Self</Filter>
+    </ClCompile>
+    <ClCompile Include="regfltr.c">
+      <Filter>Source Files\Registery</Filter>
+    </ClCompile>
+    <ClCompile Include="process.c">
+      <Filter>Source Files\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="filter.c">
+      <Filter>Source Files\Firewall</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSys.c">
+      <Filter>Source Files\FileSys</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="obcallback.h">
+      <Filter>Header Files\Self</Filter>
+    </ClInclude>
+    <ClInclude Include="process.h">
+      <Filter>Header Files\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver Main.h">
+      <Filter>Header Files\Driver Entry</Filter>
+    </ClInclude>
+    <ClInclude Include="reg.h">
+      <Filter>Header Files\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="minispy.h">
+      <Filter>Header Files\FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h">
+      <Filter>Header Files\Firewall</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

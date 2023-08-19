@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\HASH">
+      <UniqueIdentifier>{818f3906-a12c-4930-90c4-168fc16ee00f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PE">
+      <UniqueIdentifier>{78b7a164-af38-41f9-b4b8-aaff964b6043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Emulate">
+      <UniqueIdentifier>{a3a86dd9-7edc-4be4-8b95-53d7903cbf51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\HASH">
+      <UniqueIdentifier>{5c54ba56-6d97-4084-a303-61a7c8ce576b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Emulate">
+      <UniqueIdentifier>{e32138d3-1146-4654-948a-1bf6b9033b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PE">
+      <UniqueIdentifier>{893ca2fa-b010-42af-9963-a2a3b651e400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Driver">
+      <UniqueIdentifier>{0e321dd4-79e8-4026-bdd5-694447eae8e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dump Memory ETC">
+      <UniqueIdentifier>{f5e0650d-f4ed-4322-89e4-a49362e73301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Privs">
+      <UniqueIdentifier>{f1be2bc4-3500-44b9-b405-ed499e6843ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Privs">
+      <UniqueIdentifier>{9096ac4f-ba63-4957-9d4c-3f3ba44a43df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Verify">
+      <UniqueIdentifier>{02b524bb-ae2d-48c9-878f-d22ccc27c8d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CommandLineGrab">
+      <UniqueIdentifier>{deda0a6b-d259-4fcc-bd27-116a01c40ea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Compression">
+      <UniqueIdentifier>{cc0f6760-6c4b-4594-9807-edf562bb096d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Archive">
+      <UniqueIdentifier>{30262202-d6ea-4458-a40c-4eadcfdaea29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Worker">
+      <UniqueIdentifier>{6df1e5c9-2f4e-46da-b17e-70d850f79a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Service">
+      <UniqueIdentifier>{59dced05-4c8c-46d3-ab6e-516ed0facde7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scan">
+      <UniqueIdentifier>{11317123-2ca9-4d6b-8ab2-ba064e567f5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scan">
+      <UniqueIdentifier>{6b3624ae-440a-46a9-ba8b-09420491f903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Worker">
+      <UniqueIdentifier>{67e8a791-6af1-4884-8a16-dd796d92f2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\thread">
+      <UniqueIdentifier>{e0268e96-e7e8-46e3-8599-e4036e6f51b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thread">
+      <UniqueIdentifier>{fbf2e440-fbb2-4cac-81ad-a6e659e9b0d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Driver">
+      <UniqueIdentifier>{904e414f-4ab3-46ad-bd24-17e697f9a754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File Types">
+      <UniqueIdentifier>{9920b76a-0514-400d-bd29-f853f1b5c6a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File Types\DOC/XLS/PPT etc.">
+      <UniqueIdentifier>{656f824f-9c8d-495e-ae85-0082cf7096ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sha256.cpp">
+      <Filter>Source Files\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="sql.cpp">
+      <Filter>Source Files\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite.c">
+      <Filter>Source Files\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="emulate.cpp">
+      <Filter>Source Files\Emulate</Filter>
+    </ClCompile>
+    <ClCompile Include="memory.cpp">
+      <Filter>Source Files\Dump Memory ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="Privs.cpp">
+      <Filter>Source Files\Privs</Filter>
+    </ClCompile>
+    <ClCompile Include="Verify.cpp">
+      <Filter>Source Files\Verify</Filter>
+    </ClCompile>
+    <ClCompile Include="PE Info.cpp">
+      <Filter>Source Files\PE</Filter>
+    </ClCompile>
+    <ClCompile Include="scan.cpp">
+      <Filter>Source Files\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="worker.cpp">
+      <Filter>Source Files\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="thread.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="driver.cpp">
+      <Filter>Source Files\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="archive.cpp">
+      <Filter>Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="firewalldriver.cpp">
+      <Filter>Source Files\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="changed.cpp">
+      <Filter>Source Files\PE</Filter>
+    </ClCompile>
+    <ClCompile Include="stackwalk.cpp">
+      <Filter>Source Files\PE</Filter>
+    </ClCompile>
+    <ClCompile Include="protections.cpp">
+      <Filter>Source Files\PE</Filter>
+    </ClCompile>
+    <ClCompile Include="documents.cpp">
+      <Filter>Source Files\File Types\DOC/XLS/PPT etc.</Filter>
+    </ClCompile>
+    <ClCompile Include="EmulationGetPEInfo.cpp">
+      <Filter>Source Files\Emulate</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PE.h">
+      <Filter>Header Files\PE</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
+      <Filter>Header Files\HASH</Filter>
+    </ClInclude>
+    <ClInclude Include="emulate.h">
+      <Filter>Header Files\Emulate</Filter>
+    </ClInclude>
+    <ClInclude Include="Privs.h">
+      <Filter>Header Files\Privs</Filter>
+    </ClInclude>
+    <ClInclude Include="worker.h">
+      <Filter>Header Files\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="service.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="scan.h">
+      <Filter>Header Files\Scan</Filter>
+    </ClInclude>
+    <ClInclude Include="thread.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="header.h">
+      <Filter>Header Files\Driver</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
